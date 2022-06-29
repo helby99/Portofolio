@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 const express = require('express');
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000;
 
 //connection url
 const url = 'mongodb+srv://nightmoon:Polopo999@nightmare.lz7lo.mongodb.net/?retryWrites=true&w=majority';
